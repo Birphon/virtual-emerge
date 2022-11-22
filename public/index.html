@@ -1,99 +1,89 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>&lt;EMERGE&gt;</title>
-    <link rel="stylesheet" href="../public/style.css">
-</head>
+    <title>Welcome to Firebase Hosting</title>
 
-<body media="screen">
-    <header>
-        <div class="topnav">
-            <div class="topnav-centered">
-                <h1>&lt;EMERGE&gt;</h1>
-            </div>
-            <div class="topnav-right">
-                <a class="active" href="../public/index.html">Home</a>
-                <a href="../public/orgs.html">Associated Partners</a>
-                <a href="../public/tour.html">Tour</a>
-            </div>
-        </div>
-    </header>
-    <div class="main">
-        <h2>About Emerge</h2>
-        <p>Emerge is a celebration event. We celebrate the amazing work of our learners, the fantastic input, guidance,
-            and mentorship of the supervisors from both our industry partners and our own teaching teams, and the
-            support they receive from whānau and friends.</p>
-        <p>
-            It’s also a culmination of a great deal of hard work by the learners in their final stages of their study
-            here at Ara in preparation for their future careers in technology. It’s a chance for them to fully apply all
-            the learning that has taken place throughout their study to real-world IT problems in a work setting.
-            They need to use their skills, knowledge, experiences, and ability to work with others to succeed. This
-            experience culminates in them presenting their work to a panel of industry and academic supervisors and also
-            in producing the posters that you will see tonight at this event.
-        </p>
-        <p>
-            Emerge is also the starting point for the next phase of life for our learners and their IT careers, and we
-            couldn’t be prouder. Please join us in wishing them all the best for the future, speak with them and learn
-            about not just what they’ve done, but what they can do in the future.
-        </p>
-        <a class="tourpage" href="../public/tour.html">Go to Tour!</a>
-    </div>
-    <div class="main">
-        <h2>Quick Tours</h2>
-        <div class="flex">
-            <div class="card">
-                <a href="https://app.lapentor.com/sphere/virtual-emerge-ji">
-                    <img src="../public/img/falls2.jpg">
-                    <p>Software Development</p>
-                </a>
-            </div>
-            <div class="card">
-                <a href="https://app.lapentor.com/sphere/virtual-emerge-ji">
-                    <img src="../public/img/falls2.jpg">
-                    <p>Networking and Infrastructure</p>
-                </a>
-            </div>
-            <div class="card">
-                <a href="https://app.lapentor.com/sphere/virtual-emerge-ji">
-                    <img src="../public/img/falls2.jpg">
-                    <p>Information Systems</p>
-                </a>
-            </div>
-            <div class="card">
-                <a href="https://app.lapentor.com/sphere/virtual-emerge-ji">
-                    <img src="../public/img/falls2.jpg">
-                    <p>Networking</p>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="main">
-        <h2>Associated Partners</h2>
-        <p> Students have worked with the following companies: </p>
-        <div class="grid">
-            <div><img src="../public/img/falls2.jpg" alt=""></div>
-            <div><img src="../public/img/falls2.jpg" alt=""></div>
-            <div><img src="../public/img/falls2.jpg" alt=""></div>
-            <div><img src="../public/img/falls2.jpg" alt=""></div>
-            <div><img src="../public/img/falls2.jpg" alt=""></div>
-        </div>
-        <br>
-        <a class="tourpage" href="../public/orgs.html">View more Associated Partners</a>
-    </div>
-    <div class="main">
-        <h2>Contact</h2>
-        <p>To get more information contact the course coordinator, David Wier
-        </p><a href="mailto:David.Wier@ara.ac.nz">David.Wier@ara.ac.nz</a>
-    </div>
-    <footer>
-        <div class="flex">
-            <img src="../public/img/Ara TePukenga Colour Logo.png">
-            <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png">
-        </div>
-    </footer>
-</body>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.14.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.14.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="message">
+      <h2>Welcome</h2>
+      <h1>Firebase Hosting Setup Complete</h1>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
+      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    </div>
+    <p id="load">Firebase SDK Loading&hellip;</p>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
 </html>
