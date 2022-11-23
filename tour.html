@@ -5,12 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>&lt;EMERGE&gt;: Tour</title>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/responsive-nav.js"></script>
 </head>
 
 <body media="screen">
     <header>
-        <div class="topnav">
+        <div class="topnav" id="myTopnav">
             <div class="topnav-centered">
                 <h1>&lt;EMERGE&gt;</h1>
             </div>
@@ -18,8 +21,10 @@
                 <a href="index.html">Home</a>
                 <a href="orgs.html">Associated Partners</a>
                 <a class="active" href="tour.html">Tour</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
-
         </div>
     </header>
     <div class="main">
@@ -30,6 +35,9 @@
             <a
                 href="https://app.lapentor.com/sphere/virtual-emerge-ji">https://app.lapentor.com/sphere/virtual-emerge-ji</a>
         </p>
+    </div>
+
+    <div class="main">
         <h2>Controls</h2>
         <div class="flex">
             <div class="card">
@@ -69,6 +77,12 @@
     <div>
 
     </div>
+    <footer>
+        <div class="flex">
+            <img src="img/Ara TePukenga Colour Logo.png">
+            <img src="img/CC-BY-SA.png">
+        </div>
+    </footer>
 </body>
 
 </html>

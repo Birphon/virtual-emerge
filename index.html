@@ -3,14 +3,17 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>&lt;EMERGE&gt;</title>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/responsive-nav.js"></script>
 </head>
 
 <body media="screen">
     <header>
-        <div class="topnav">
+        <div class="topnav" id="myTopnav">
             <div class="topnav-centered">
                 <h1>&lt;EMERGE&gt;</h1>
             </div>
@@ -18,6 +21,9 @@
                 <a class="active" href="index.html">Home</a>
                 <a href="orgs.html">Associated Partners</a>
                 <a href="tour.html">Tour</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
         </div>
     </header>
@@ -58,7 +64,7 @@
             </div>
             <div class="card">
                 <a href="https://app.lapentor.com/sphere/virtual-emerge-ji">
-                    <img src="img/falls2.jpg">
+                    <img src="img/code.jpg">
                     <p>Information Systems</p>
                 </a>
             </div>
@@ -68,11 +74,14 @@
         <h2>Associated Partners</h2>
         <p> Students have worked with the following companies: </p>
         <div class="grid">
-            <div><img src="img/falls2.jpg" alt=""></div>
-            <div><img src="img/falls2.jpg" alt=""></div>
-            <div><img src="img/falls2.jpg" alt=""></div>
-            <div><img src="img/falls2.jpg" alt=""></div>
-            <div><img src="img/falls2.jpg" alt=""></div>
+            <div><img src="https://avatars.githubusercontent.com/u/13029146?s=280&v=4" alt=""></div>
+            <div><img src="https://www.pscconsulting.com/wp-content/uploads/clients/kiwi-rail.jpg" alt=""></div>
+            <div><img src="https://www.kraftheinzcompany.com/pressroom/images/view/kraftHeinzLogo.png" alt=""></div>
+            <div><img src="https://teohaka.co.nz/wp-content/uploads/2020/09/SchoolBell_Logo-01-e1599436601153.png"
+                    alt=""></div>
+            <div><img
+                    src="https://media-exp1.licdn.com/dms/image/C560BAQGA50NlV379KQ/company-logo_200_200/0/1599077609813?e=2147483647&v=beta&t=WUp8h2B9fh4dQldEifuWafrwOmDv2Pri63gj1k7vQKE"
+                    alt=""></div>
         </div>
         <br>
         <a class="tourpage" href="orgs.html">View more Associated Partners</a>
@@ -82,10 +91,14 @@
         <p>To get more information contact the course coordinator, David Wier
         </p><a href="mailto:David.Wier@ara.ac.nz">David.Wier@ara.ac.nz</a>
     </div>
-    <footer>
+    <footer class="main">
         <div class="flex">
-            <img src="img/Ara TePukenga Colour Logo.png">
-            <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png">
+            <div class="card">
+                <img src="img/Ara TePukenga Colour Logo.png">
+            </div>
+            <div class="card">
+                <img src="img/CC-BY-SA.png">
+            </div>
         </div>
     </footer>
 </body>
