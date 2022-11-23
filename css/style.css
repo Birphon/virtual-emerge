@@ -115,13 +115,11 @@ footer {
     max-width: 300px;
     margin: auto;
     text-align: center;
-    overflow: hidden;
-    background: #E1E7EC;
 }
 
 
 .card>a>img {
-    max-width: 100%;
+    max-width: 95%;
     max-height: 50%;
 }
 
@@ -167,14 +165,14 @@ footer {
     transform: translate(-50%, -50%);
 }
 
-.flex {
-    display: flex;
-    justify-content: space-around;
-}
-
 .card>img {
     max-width: 100%;
     max-height: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
 }
 
 .navtext {
